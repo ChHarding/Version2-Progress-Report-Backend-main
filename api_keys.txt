@@ -1,0 +1,9 @@
+from API_keys import API_KEY # import constant directly
+
+print("API_KEY is", API_KEY)
+
+with open('api_keys.txt') as f:
+    key_list = f.readlines()
+    api_key1 = key_list[0].strip()
+    api_key2 = key_list[1].strip()
+print(api_key1, api_key2)
